@@ -1,0 +1,16 @@
+[package]
+name = "edid-query"
+version = "0.1.0"
+authors = ["Alexander Hill <ahill@breadpudding.dev>"]
+edition = "2021"
+description = "A crate that queries the EDID of a monitor"
+repository = "https://github.com/cbpudding/edid-query"
+license = "MIT"
+categories = ["api-bindings", "graphics", "hardware-support", "os"]
+
+[dependencies]
+edid-rs = "0.1.0"
+raw-window-handle = "0.5.2"
+
+[target.'cfg(unix)'.dependencies]
+x11 = "2.21.0"
