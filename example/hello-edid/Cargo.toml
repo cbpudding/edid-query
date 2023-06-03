@@ -1,0 +1,9 @@
+[package]
+name = "hello-edid"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+edid-query = { path = "../.." }
+raw-window-handle = "0.5.2"
+winit = "0.28.6"
